@@ -1,0 +1,98 @@
+<!doctype html>
+<!--Start HTML Document-->
+<html>
+
+<!--Start head-->
+<head>
+<meta charset="utf-8">
+<title>Amar Bathwal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script 	
+ src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+ integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<!--End head-->
+
+<!--Start body-->
+<body>
+<div class="container-fluid">
+ 
+ <!--Start modal section-->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header left">
+          <h4 class="modal-title" id="header-title"></h4>
+        </div>
+        <div class="modal-body">
+          <p id="body-text"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default" id="try-again">Try Again</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End modal section-->
+  
+  <!--Start profile section-->
+  <div class="jumbotron-fluid">
+    <div class="row canvas">
+     <!--Profile pic-->
+      <div class="offset-lg-4 col-lg-4 offset-md-4 col-md-4 col-xs-12 col-sm-12" style="padding-right: 5%;"> <img src="" class="img-fluid profile_pic" id="img-profile-pic"> </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 details">
+       <!--User name-->
+        <h2 id="name" class="name" style="min-width: 400px;">Oops!! nothing to show.</h2>
+        <!--User loction-->
+        <div class="row"> <img src="https://png.icons8.com/ios/50/000000/address-filled.png">
+          <h6 id="location" class="icon_text">Oops!! nothing to show.</h6>
+        </div>
+        <!--User hometown-->
+        <div class="row"> <img src="https://png.icons8.com/ios/50/000000/order-delivered-filled.png">
+          <h6 id="hometown" class="icon_text">Oops!! nothing to show.</h6>
+        </div>
+        <!--User birth date-->
+        <div class="row"> <img src="https://png.icons8.com/ios/50/000000/birthday.png">
+          <h6 id="dob" class="icon_text">Oops!! nothing to show.</h6>
+        </div>
+        <!--User favourite quotes-->
+        <div class="row"> <span class="quotes"><strong>Quotes</strong></span>
+          <p id="quotes">Oops!! nothing to show.</p>
+        </div>
+        <!--User about-->
+        <div class="row"> <span class="about"><strong>About</strong></span> </div>
+        <div class="row">
+          <p id="about"> <span>Oops!! nothing to show.</span> </p>
+        </div>
+        <!--Posts button-->
+        <div class="row">
+          <button class="btn posts_btn" onclick="openNav()">View my posts</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End profile section-->
+  
+  <!--Start posts section-->
+  <div id="myNav" class="overlay"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div id="timeline" class="timeline"> </div>
+    <button class="btn btn-danger" onclick="scrollToTop()" id="top-btn" title="Go to top">Top</button>
+  </div>
+  <!--End posts section-->
+  
+</div>
+
+<script src="js/loadProfile.js"></script>
+</body>
+<!--End Body-->
+
+</html>
+<!--End HTML Document-->
